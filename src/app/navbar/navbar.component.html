@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <ul class="navbar-links">
+        <li><a routerLink="home" >Home</a></li>
+        <li><a routerLink="about" >About me</a></li>
+        <li><a routerLink="skills" >Skills</a></li>
+        <li><a routerLink="projects" >Projects</a></li>
+        <li><a routerLink="contact" >Contact</a></li>
+        <li><button (click)="toggleTheme()" class="btn btn-outline-light theme-toggle">
+          <i [class]="isDarkMode ? 'bi bi-sun-fill' : 'bi bi-moon-fill'"></i>
+        </button></li>
+      </ul>
+      
+      
+    </div>
+  </nav>
+  

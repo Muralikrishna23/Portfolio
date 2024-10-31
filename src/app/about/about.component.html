@@ -1,0 +1,14 @@
+<div class="about-container">
+    <h1>About Me</h1>
+    <h2>{{ name }}</h2>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+  
+    <div class="skills-section">
+      <h4>Skills</h4>
+      <ul>
+        <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
+  </div>
+  

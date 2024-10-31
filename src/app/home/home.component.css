@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #da892d; 
+    color: rgb(17, 15, 15); */
+  }
+  
+  ngx-typed-js {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .h1 h2{
+    font-size: 50px;
+  }
+  .download-btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    background-color: #ff5722; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .download-btn:hover {
+    background-color: #e64a19; 
+  }
+  
