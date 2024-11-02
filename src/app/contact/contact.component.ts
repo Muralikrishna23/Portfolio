@@ -11,27 +11,22 @@ import emailjs,{ EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  from_name:string='';
-  from_email:string='';
-  message:string='';
-  form = {
-    from_name: '',
-    from_email: '',
-    message: ''
-  };
+  
+  public  sendEmail(e: Event) {
+    e.preventDefault();
 
-  onSubmit(): void {
-    const serviceID = 'service_f7vi5vn';
-    const templateID = 'template_9y06vje';
-    const publicKey = 'Af2_8j24WbRM2tllX'; 
-
-    emailjs.send(serviceID, templateID, this.form, publicKey)
-      .then((response: EmailJSResponseStatus) => {
-        alert('Message sent successfully!');
-        this.form = { from_name: '', from_email: '', message: '' }; 
-      }, (error) => {
-        console.error('Failed to send message:', error);
-        alert('Failed to send the message. Please try again later.');
-      });
+    emailjs
+      .sendForm('service_f7vi5vn', 'template_accqmim', e.target as HTMLFormElement, {
+        publicKey: 'Af2_8j24WbRM2tllX',
+      })
+      .then(
+        () => {
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          alert('Failed to send the message. Please try again later.');
+        },
+      );
   }
 }
