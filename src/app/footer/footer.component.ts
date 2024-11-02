@@ -9,5 +9,5 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  
 }

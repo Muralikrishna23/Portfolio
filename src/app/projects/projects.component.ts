@@ -22,7 +22,7 @@ export class ProjectsComponent {
       title: "Portfolio Website",
       description: "A personal portfolio website built with Angular and Bootstrap.",
       image: "../assets/images/portfolio.png",
-      link: ""
+      link: "https://github.com/Muralikrishna23/Portfolio"
     },
     {
       title: "E-Library",
@@ -34,7 +34,7 @@ export class ProjectsComponent {
       title:"Todo app",
       description:"This app was buit using angular",
       image:"",
-      link:""
+      link:"https://github.com/Muralikrishna23/To-do"
     }
 
   ];

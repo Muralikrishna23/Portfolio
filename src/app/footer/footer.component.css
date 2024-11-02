@@ -1,7 +1,8 @@
 .footer {
     display: flex;
-    
+   
     justify-content: center;
+    align-items: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -14,23 +15,30 @@
     font-size: 1.2em;
     text-decoration: none;
     transition: color 0.3s;
+    
   }
   
   .footer a:hover {
-    color: #ff5722;
+    color: #2294ff;
   }
   
   .footer i {
     margin-right: 5px;
   }
-  .quote {
-    text-align: center;  
-    font-size: 14px;
-    font-style: italic; 
-    margin-top: 0px; 
-    background-color: #333;
-    color: white;
-    margin-top: 10px;
-    padding:10px;
+
+  .fa {
+    padding: 10px; 
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
   }
   
+  .fa:hover {
+      opacity: 0.7;
+  }
+ p{
+ text-align: center;
+ background-color: #333;
+}
